@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Marshrut</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Custom Transportation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+            Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="/static/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/static/web/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+        <link href="/static/web/css/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons -->
+        <link rel="stylesheet" href="/static/web/css/lightbox.css">
+        <link href="/static/web/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="/static/web/js/jquery-2.2.3.min.js"></script>
+        <link href="//fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+<div class="w3_navigation border">
+		<div class="container border">
+			<nav class="navbar border navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="w3_navigation_pos">
+						<h1><a href="/">Deliver</a></h1>
+					</div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--miranda">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item"><a href="/#about" class="scroll menu__link">О нас</a></li>
+							<li class="menu__item"><a href="/marshrutka" class="scroll menu__link">Запись</a></li>
+							<li class="menu__item"><a href="/#contact" class="scroll menu__link">Контакты</a></li>
+							<li class="menu__item menu__item--current"><a class="menu__link" href="" >Новости</a></li>
+							<li class="menu__item"><a href="/#gallery" class="scroll menu__link">Авто</a></li>
+                            <li class="menu__item"><a href="/#contact" class="scroll menu__link">Аренда</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+        <div class="container-fluid">
+                 <div class="container">
+                     <div class="row text-center justify-content-center" >
+                    {% block content %}
+                        {% for post in object_list %}
+                                <div class="col-xs-12 col-sm-4 col-lg-3">
+                                        <img src="/static/image/new.jpg" alt="" width="280" height ="200">
+                                        <h2>{{ post.title }}</h2>
+                                        <h3>{{ post.date|date:"d-m-Y" }}</h3>
+                                        <p><a href="/news/{{ post.id }}">Читать далее...</a></p>
+                                        </div>
+
+                        {% endfor %}
+                    {% endblock %}
+                     </div>
+                 </div>
+        </div>
+
+	<!-- banner-bottom -->
+	<div class="agileinfo-abt-btm w3ls-section">
+		<div class="container">
+			<h3 class="h3-w3l">Маршрутное такси <span>- нужный, быстрый и полезный вид транспорта. С комфортом доставят вас в любую точку Беларуси</span></h3>
+			<h4 class="h3-w3l">и за её пределы.</h4>
+		</div>
+	</div>
+
+
+
+
+	<!-- //contact -->
+	<div class="w3_agile-copyright text-center">
+		<p>© 2020 custom. All rights reserved | Design by Alina Sadovskaya</p>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+		<div class="modal-dialog">
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3>Маршрутное такси</h3>
+						<img src="/static/image/068.jpg" alt="construct" class="img-responsive"/>
+						<span>Наша основная работа — это экспресс-доставка пассажиров из Новолукомля в Минск и обратно! Это мы делаем каждый день на комфортабельных микроавтобусах вместимостью до 21 пассажирских мест. Пассажирские перевозки Минск-Новолукомль и Минск-Москва представляют собой качественный сервис по неизменно отличной стоимости проезда. Отправление каждый час и четко соблюдаемый график движения позволяет пассажирам комфортно и быстро добираться из Минска в Новолукомль и обратно. Предварительный заказ мест в наших автобусах гарантирует пассажирам отсутствие проблем в день выезда.</span>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- //Modal -->
+	<script src="/static/web/js/index.js"></script>
+	<!-- //banner -->
+<script src="/static/web/js/jarallax.js"></script>
+<script src="/static/web/js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	/* init Jarallax */
+	$('.jarallax').jarallax({
+		speed: 0.5,
+		imgWidth: 1366,
+		imgHeight: 768
+	})
+</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+				});
+		</script>
+
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="/static/web/js/move-top.js"></script>
+		<script type="text/javascript" src="/static/web/js/easing.js"></script>
+
+		<!-- /ends-smoth-scrolling -->
+	<!-- //here ends scrolling icon -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/static/web/js/bootstrap.js"></script>
+
+</body>
+</html>

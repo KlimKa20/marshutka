@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новости</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1> Новости </h1>
+      <p>
+        <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+        <a href="/contact" class="btn btn-info btn-lg">Контакты &raquo;</a>
+      </p>
+        {% block content %}
+            {% for post in object_list %}
+               <a href="/news/{{ post.id }}"><h3>{{ post.title }}</h3></a>
+                <h5>{{ post.date|date:"d-m-Y" }}</h5>
+            {% endfor %}
+        {% endblock %}
+    </div>
+  </div>
+  <div class="container">
+    <img src="{% static 'image/1.jpg' %}" class="img-thumbnail">
+    <hr>
+    &copy; Все права защищены 2020
+  </div>
+</body>
+</html>
