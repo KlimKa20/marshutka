@@ -1,0 +1,20 @@
+{% extends "accounts/auth_base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}VALIDATION{% endblock %}
+
+{% block form_heading %}Верификация{% endblock %}
+
+{% block form %}
+    <form>
+       <h3>Пожалуйста, подтвердите свою почту, закончив регистрацию.</h3>
+        <h4>Для этого перейдите по ссылке, отправленной, на указанную почту</h4>
+    </form>
+
+  <div class="form-message ">
+    <p>
+      Если Вы уже прошли верификацию, то ввойдите в свой аккаунт! <a href="{% url 'accounts:login' %}">Вход</a>.
+    </p>
+  </div>
+{% endblock form %}

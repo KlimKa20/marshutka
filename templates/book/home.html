@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block extra-head %}
+<style type="text/css">
+  #map{ width:700px; height: 500px; }
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFP-zJmSQLJLGdZyY5iWIumtJu7pdibAs&libraries=places"></script>
+{% endblock %}
+
+{% block title %}Marshrut{% endblock %}
+
+
+{% block body %}
+    <div class="w3-display-middle" style="width:65%;">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Search');"><i
+                        class="fa fa-car w3-margin-right"></i>Забронировать
+            </button>
+
+            <form class="searchForm" action="{% url 'book:search' %}" method="post" onsubmit=submitSearchForm()>
+                {% csrf_token %}
+                <input class="w3-blue w3-bar-item dateInput"  type="date" name="journey_date" style="float: right; width: 25%; height: 25px;"  required>
+        </div>
+
+
+        <div id="Search" class="w3-container w3-white w3-padding-16 myLink">
+            <h3>Комфорт, скорость и безопасность!</h3>
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half">
+                        <label>Откуда:</label>
+                        <input class="w3-input w3-border sourceInput" list="sources" name="source" required>
+                          <datalist id="sources">
+                              {% for s in stations %}
+                              <option value="{{ s.pk }}">{{ s }}</option>
+                              {% endfor %}
+                          </datalist>
+                    </div>
+                    <div class="w3-half">
+                        <label>Куда:</label>
+                        <input class="w3-input w3-border" list="destinations" name="dest" required>
+                          <datalist id="destinations">
+                            {% for s in stations %}
+                                <option value="{{ s.pk }}">{{ s }}</option>
+                            {% endfor %}
+                          </datalist>
+                    </div>
+                </div>
+                <p>
+                    <input class="w3-button w3-dark-grey" type="submit" value="Поиск">
+                </p>
+            </form>
+        </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block end-scripts %}
+
+{% endblock %}
