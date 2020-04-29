@@ -113,7 +113,6 @@ mock==3.0.5
 mongoengine==0.19.1
 more-itertools==8.2.0
 msgpack==0.6.1
-mylab2==0.4
 mysql==0.0.2
 mysqlclient==1.4.6
 nbconvert==5.6.1
