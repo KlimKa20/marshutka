@@ -149,8 +149,6 @@ pylint-plugin-utils==0.4
 pymongo==3.10.1
 pyowm==2.10.0
 pyparsing==2.4.6
-PyPDF2==1.26.0
-pypiwin32==223
 pyrsistent==0.15.7
 pyTelegramBotAPI==3.6.6
 pytest==5.4.1
