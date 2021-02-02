@@ -11,7 +11,7 @@ Babel==2.8.0
 backcall==0.1.0
 base==1.0.4
 billiard==3.6.0.0
-bleach==2.1.2
+bleach==3.3.0
 blessed==1.15.0
 blinker==1.4
 boto3==1.9.109
