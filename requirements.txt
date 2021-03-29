@@ -137,7 +137,7 @@ py-moneyed==0.8.0
 pycodestyle==2.4.0
 pycparser==2.19
 pyflakes==2.0.0
-Pygments==2.5.2
+Pygments==2.7.4
 PyJWT==1.7.1
 pylint==2.2.2
 pylint-django==2.0.5
