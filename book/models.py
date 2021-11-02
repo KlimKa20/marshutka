@@ -26,11 +26,11 @@ class Car(models.Model):
 
 
 class Schedule(models.Model):
+    id = models.AutoField(primary_key=True)
     arrival = models.CharField("Arrival", max_length=8, null=True)
     day = models.IntegerField("Day", null=True)
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name="car_schedule")
     station = models.ForeignKey(Station, on_delete=models.CASCADE, related_name="station_schedule")
-    id = models.IntegerField("id", primary_key=True)
     departure = models.CharField("Departure", max_length=8, null=True)
 
     def __str__(self):
@@ -38,6 +38,7 @@ class Schedule(models.Model):
 
 
 class Seat_Chart(models.Model):
+    id = models.AutoField(primary_key=True)
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name="car_chart")
     first_ac = models.IntegerField("1st AC")
     second_ac = models.IntegerField("2nd AC")
@@ -54,6 +55,7 @@ class Seat_Chart(models.Model):
 
 
 class Ticket(models.Model):
+    id = models.AutoField(primary_key=True)
     passenger = models.CharField("Name",max_length=20)
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name="car_tickets")
     type = models.CharField("Type",max_length=2)

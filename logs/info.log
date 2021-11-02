@@ -50,3 +50,376 @@ INFO 2020-04-29 20:33:35,184 views 4740 9640 Alina Add ticket
 INFO 2020-04-29 21:16:13,292 basehttp 13596 12608 "GET / HTTP/1.1" 200 29544
 INFO 2020-04-29 21:48:47,821 basehttp 14268 15228 "GET / HTTP/1.1" 200 29544
 INFO 2020-04-29 21:51:09,011 basehttp 10084 16044 "GET / HTTP/1.1" 200 29544
+INFO 2021-11-02 20:35:45,025 autoreload 8644 8756 Watching for file changes with StatReloader
+INFO 2021-11-02 20:55:42,424 autoreload 7000 3488 Watching for file changes with StatReloader
+INFO 2021-11-02 20:57:27,699 autoreload 9544 18640 Watching for file changes with StatReloader
+INFO 2021-11-02 20:58:53,281 autoreload 1004 8716 Watching for file changes with StatReloader
+INFO 2021-11-02 20:59:54,644 autoreload 2980 20124 Watching for file changes with StatReloader
+INFO 2021-11-02 21:01:02,888 autoreload 20244 12636 Watching for file changes with StatReloader
+INFO 2021-11-02 21:07:55,791 autoreload 10888 18636 Watching for file changes with StatReloader
+INFO 2021-11-02 21:14:49,192 autoreload 19140 2020 Watching for file changes with StatReloader
+INFO 2021-11-02 21:16:01,412 autoreload 17424 15056 Watching for file changes with StatReloader
+INFO 2021-11-02 21:16:13,561 basehttp 17424 16624 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 21:16:17,724 basehttp 17424 17852 "GET /static/web/css/font-awesome.css HTTP/1.1" 200 37414
+INFO 2021-11-02 21:16:17,774 basehttp 17424 12028 "GET /static/web/css/lightbox.css HTTP/1.1" 200 4054
+INFO 2021-11-02 21:16:17,790 basehttp 17424 16624 "GET /static/web/css/bootstrap.css HTTP/1.1" 200 141622
+INFO 2021-11-02 21:16:17,792 basehttp 17424 8620 "GET /static/web/css/easy-responsive-tabs.css HTTP/1.1" 200 4680
+INFO 2021-11-02 21:16:17,830 basehttp 17424 8212 "GET /static/web/js/jquery-2.2.3.min.js HTTP/1.1" 200 85659
+INFO 2021-11-02 21:16:17,857 basehttp 17424 8212 "GET /static/web/js/lightbox-plus-jquery.min.js HTTP/1.1" 200 93077
+INFO 2021-11-02 21:16:17,861 basehttp 17424 6960 "GET /static/web/css/style.css HTTP/1.1" 200 48255
+INFO 2021-11-02 21:16:17,874 basehttp 17424 6960 "GET /static/web/js/easy-responsive-tabs.js HTTP/1.1" 200 6489
+INFO 2021-11-02 21:16:17,875 basehttp 17424 8212 "GET /static/web/js/index.js HTTP/1.1" 200 759
+INFO 2021-11-02 21:16:17,914 basehttp 17424 8212 "GET /static/web/js/jarallax.js HTTP/1.1" 200 14718
+INFO 2021-11-02 21:16:17,929 basehttp 17424 16624 "GET /static/web/js/move-top.js HTTP/1.1" 200 1331
+INFO 2021-11-02 21:16:17,929 basehttp 17424 8620 "GET /static/web/js/easing.js HTTP/1.1" 200 4759
+INFO 2021-11-02 21:16:17,930 basehttp 17424 6960 "GET /static/web/js/SmoothScroll.min.js HTTP/1.1" 200 13725
+INFO 2021-11-02 21:16:17,934 basehttp 17424 17852 "GET /static/image/Karta.png HTTP/1.1" 200 62421
+INFO 2021-11-02 21:16:17,936 basehttp 17424 12028 "GET /static/web/js/bootstrap.js HTTP/1.1" 200 67546
+INFO 2021-11-02 21:16:17,938 basehttp 17424 8212 "GET /static/image/fon2.jpg HTTP/1.1" 200 74078
+INFO 2021-11-02 21:16:17,958 basehttp 17424 12028 "GET /static/image/068.jpg HTTP/1.1" 200 45056
+INFO 2021-11-02 21:16:17,959 basehttp 17424 6960 "GET /static/image/k1.jpg HTTP/1.1" 200 42550
+INFO 2021-11-02 21:16:17,960 basehttp 17424 17852 "GET /static/image/k3.jpg HTTP/1.1" 200 69452
+INFO 2021-11-02 21:16:17,960 basehttp 17424 8620 "GET /static/image/k2.jpg HTTP/1.1" 200 72384
+INFO 2021-11-02 21:16:17,962 basehttp 17424 16624 "GET /static/image/k4.jpg HTTP/1.1" 200 41708
+INFO 2021-11-02 21:16:17,966 basehttp 17424 8212 "GET /static/image/k5.jpg HTTP/1.1" 200 61646
+INFO 2021-11-02 21:16:17,983 basehttp 17424 12028 "GET /static/image/k6.jpg HTTP/1.1" 200 53135
+INFO 2021-11-02 21:16:17,987 basehttp 17424 16624 "GET /static/image/k7.jpg HTTP/1.1" 200 68268
+INFO 2021-11-02 21:16:18,000 basehttp 17424 8620 "GET /static/image/k8.jpg HTTP/1.1" 200 72895
+INFO 2021-11-02 21:16:18,007 basehttp 17424 17852 "GET /static/web/images/g7.jpg HTTP/1.1" 200 35325
+INFO 2021-11-02 21:16:18,028 basehttp 17424 6960 "GET /static/web/images/g5.jpg HTTP/1.1" 200 57411
+INFO 2021-11-02 21:16:18,046 basehttp 17424 12028 "GET /static/web/images/t1.jpg HTTP/1.1" 200 14593
+INFO 2021-11-02 21:16:18,061 basehttp 17424 17852 "GET /static/web/images/t2.jpg HTTP/1.1" 200 11516
+INFO 2021-11-02 21:16:18,075 basehttp 17424 8620 "GET /static/web/images/t3.jpg HTTP/1.1" 200 83507
+INFO 2021-11-02 21:16:18,078 basehttp 17424 16624 "GET /static/web/images/t4.jpg HTTP/1.1" 200 17575
+INFO 2021-11-02 21:16:18,088 basehttp 17424 8212 "GET /static/web/images/2.jpg HTTP/1.1" 200 105521
+INFO 2021-11-02 21:16:18,097 basehttp 17424 16624 "GET /static/image/fon.jpg HTTP/1.1" 200 167229
+INFO 2021-11-02 21:16:18,113 basehttp 17424 17852 "GET /static/web/images/slide1.jpg HTTP/1.1" 200 44860
+INFO 2021-11-02 21:16:18,114 basehttp 17424 8620 "GET /static/web/images/banner.jpg HTTP/1.1" 200 174095
+INFO 2021-11-02 21:16:18,961 basehttp 17424 17852 "GET /static/web/images/img-sprite.png HTTP/1.1" 200 3205
+INFO 2021-11-02 21:16:18,968 basehttp 17424 8620 "GET /static/web/images/loading.gif HTTP/1.1" 200 8476
+INFO 2021-11-02 21:16:18,969 basehttp 17424 16624 "GET /static/web/images/close.png HTTP/1.1" 200 280
+INFO 2021-11-02 21:16:19,085 basehttp 17424 8620 "GET /static/web/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2021-11-02 21:16:19,087 basehttp 17424 16624 "GET /static/web/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 71896
+INFO 2021-11-02 21:16:19,183 basehttp 17424 16624 "GET /static/web/images/sub.jpg HTTP/1.1" 200 346729
+WARNING 2021-11-02 21:16:20,963 log 17424 16624 Not Found: /favicon.ico
+WARNING 2021-11-02 21:16:20,965 basehttp 17424 16624 "GET /favicon.ico HTTP/1.1" 404 2800
+INFO 2021-11-02 21:16:22,410 basehttp 17424 16624 "GET /static/web/images/move-up.png HTTP/1.1" 200 3407
+INFO 2021-11-02 21:16:46,236 basehttp 17424 17492 "GET /marshrutka/ HTTP/1.1" 302 0
+INFO 2021-11-02 21:16:46,244 basehttp 17424 17492 "GET /marshrutka/login?next=/marshrutka/ HTTP/1.1" 301 0
+INFO 2021-11-02 21:16:46,339 basehttp 17424 17492 "GET /marshrutka/login/?next=/marshrutka/ HTTP/1.1" 200 2728
+INFO 2021-11-02 21:16:46,387 basehttp 17424 9708 "GET /static/css/bootstrap-theme.css HTTP/1.1" 200 22474
+INFO 2021-11-02 21:16:46,395 basehttp 17424 17492 "GET /static/css/bootstrap.css HTTP/1.1" 200 137067
+INFO 2021-11-02 21:16:46,438 basehttp 17424 9708 "GET /static/js/dateFormat.js HTTP/1.1" 200 4584
+INFO 2021-11-02 21:16:46,445 basehttp 17424 17492 "GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 271751
+INFO 2021-11-02 21:16:46,446 basehttp 17424 9708 "GET /static/js/bootstrap.js HTTP/1.1" 200 65813
+INFO 2021-11-02 21:16:46,460 basehttp 17424 17492 "GET /static/js/materialize.js HTTP/1.1" 200 267975
+INFO 2021-11-02 21:16:46,472 basehttp 17424 15788 "GET /static/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2021-11-02 21:16:46,497 basehttp 17424 8308 "GET /static/css/animate.css HTTP/1.1" 200 61382
+INFO 2021-11-02 21:16:46,516 basehttp 17424 17968 "GET /static/css/main.css HTTP/1.1" 200 33150
+INFO 2021-11-02 21:16:46,522 basehttp 17424 17900 "GET /static/css/materialize.css HTTP/1.1" 200 196321
+INFO 2021-11-02 21:16:46,596 basehttp 17424 17900 "GET /static/fon.jpg HTTP/1.1" 200 189788
+INFO 2021-11-02 21:16:53,892 basehttp 17424 17812 "GET /admin HTTP/1.1" 301 0
+INFO 2021-11-02 21:16:53,956 basehttp 17424 17812 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-11-02 21:16:54,023 basehttp 17424 17812 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+INFO 2021-11-02 21:16:54,112 basehttp 17424 17812 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2021-11-02 21:16:54,113 basehttp 17424 16652 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2021-11-02 21:16:54,125 basehttp 17424 17812 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-11-02 21:16:54,126 basehttp 17424 6928 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2021-11-02 21:16:54,145 basehttp 17424 8216 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-11-02 21:16:54,155 basehttp 17424 3500 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2021-11-02 21:16:54,303 basehttp 17424 3500 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-11-02 21:16:54,314 basehttp 17424 8216 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-11-02 21:17:04,638 basehttp 17424 19988 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+INFO 2021-11-02 21:17:04,810 basehttp 17424 19988 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-11-02 21:17:10,820 basehttp 17424 7252 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+INFO 2021-11-02 21:17:18,459 basehttp 17424 13040 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2021-11-02 21:17:18,777 basehttp 17424 13040 "GET /admin/ HTTP/1.1" 200 10521
+INFO 2021-11-02 21:17:18,835 basehttp 17424 13040 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2021-11-02 21:17:18,854 basehttp 17424 13040 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-11-02 21:17:18,861 basehttp 17424 15408 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-11-02 21:17:18,873 basehttp 17424 15408 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2021-11-02 21:17:49,012 basehttp 17424 7884 "GET /admin/auth/user/ HTTP/1.1" 200 11493
+INFO 2021-11-02 21:17:49,119 basehttp 17424 7884 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+INFO 2021-11-02 21:17:49,123 basehttp 17424 8608 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-11-02 21:17:49,141 basehttp 17424 7884 "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+INFO 2021-11-02 21:17:49,154 basehttp 17424 8608 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2021-11-02 21:17:49,167 basehttp 17424 7884 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-11-02 21:17:49,172 basehttp 17424 8608 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-11-02 21:17:49,180 basehttp 17424 19868 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-11-02 21:17:49,234 basehttp 17424 18148 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2021-11-02 21:17:49,277 basehttp 17424 7956 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:17:49,288 basehttp 17424 5688 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2021-11-02 21:17:49,374 basehttp 17424 7956 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2021-11-02 21:17:49,397 basehttp 17424 7956 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2021-11-02 21:17:49,399 basehttp 17424 5688 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2021-11-02 21:17:49,536 basehttp 17424 5688 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2021-11-02 21:17:49,551 basehttp 17424 7956 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2021-11-02 21:18:15,218 basehttp 17424 15476 "GET /admin/book/car/ HTTP/1.1" 200 9488
+INFO 2021-11-02 21:18:15,425 basehttp 17424 15476 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:18:24,362 basehttp 17424 12920 "GET / HTTP/1.1" 200 29542
+ERROR 2021-11-02 21:19:15,642 log 17424 4212 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\7sem\TRPO\Marshrutka\marshutka-master\firstpaige\views.py", line 9, in index
+    send_mail('Novolukoml_Minsk',
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\mail\__init__.py", line 61, in send_mail
+    return mail.send()
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\mail\message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\mail\backends\smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\mail\backends\smtp.py", line 69, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 734, in login
+    raise last_exception
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 723, in login
+    (code, resp) = self.auth(
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 646, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: Invalid user or password! 1635877155-10dEH4jxtj-JFwmdmhA')
+ERROR 2021-11-02 21:19:15,650 basehttp 17424 4212 "POST / HTTP/1.1" 500 107025
+INFO 2021-11-02 21:20:08,873 basehttp 17424 19664 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 21:20:20,058 basehttp 17424 17152 "GET /news/ HTTP/1.1" 200 6917
+INFO 2021-11-02 21:20:20,225 basehttp 17424 17152 "GET /static/image/new.jpg HTTP/1.1" 200 44410
+INFO 2021-11-02 21:20:23,294 basehttp 17424 17152 "GET /news/1 HTTP/1.1" 200 6272
+INFO 2021-11-02 21:20:40,542 basehttp 17424 13040 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 21:20:48,585 basehttp 17424 7588 "GET /marshrutka/ HTTP/1.1" 200 4974
+INFO 2021-11-02 21:21:17,814 basehttp 17424 1876 "POST /marshrutka/search HTTP/1.1" 200 3623
+INFO 2021-11-02 21:21:24,606 basehttp 17424 1876 "GET /admin/ HTTP/1.1" 200 10521
+INFO 2021-11-02 21:21:24,674 basehttp 17424 1876 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:24,675 basehttp 17424 18624 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:24,681 basehttp 17424 1876 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:24,714 basehttp 17424 1876 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:24,716 basehttp 17424 3440 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:24,996 basehttp 17424 3440 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:24,998 basehttp 17424 1876 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:25,037 basehttp 17424 1876 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:29,841 basehttp 17424 9108 "GET /admin/book/schedule/ HTTP/1.1" 200 10861
+INFO 2021-11-02 21:21:30,092 basehttp 17424 9108 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:21:32,123 basehttp 17424 9108 "GET /admin/book/schedule/11/change/ HTTP/1.1" 200 12775
+INFO 2021-11-02 21:21:32,187 basehttp 17424 9108 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2021-11-02 21:21:32,221 basehttp 17424 9108 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2021-11-02 21:21:32,235 basehttp 17424 18940 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2021-11-02 21:21:32,242 basehttp 17424 18940 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:32,257 basehttp 17424 18940 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2021-11-02 21:21:32,267 basehttp 17424 18940 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2021-11-02 21:21:32,350 basehttp 17424 14304 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:21:51,046 basehttp 17424 2352 "GET /admin/book/ticket/ HTTP/1.1" 200 7624
+INFO 2021-11-02 21:21:51,325 basehttp 17424 2352 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:21:53,980 basehttp 17424 2352 "GET /admin/mail/mail/ HTTP/1.1" 200 9202
+INFO 2021-11-02 21:21:54,194 basehttp 17424 2352 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:01,864 basehttp 17424 8264 "GET /admin/mail/mail/88/change/ HTTP/1.1" 200 11835
+INFO 2021-11-02 21:22:01,939 basehttp 17424 8264 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2021-11-02 21:22:01,944 basehttp 17424 8104 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2021-11-02 21:22:01,950 basehttp 17424 4612 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+INFO 2021-11-02 21:22:01,971 basehttp 17424 13860 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+INFO 2021-11-02 21:22:02,151 basehttp 17424 12396 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:02,302 basehttp 17424 13860 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2021-11-02 21:22:02,303 basehttp 17424 12396 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2021-11-02 21:22:02,305 basehttp 17424 4612 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2021-11-02 21:22:02,311 basehttp 17424 12396 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2021-11-02 21:22:02,314 basehttp 17424 4612 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2021-11-02 21:22:16,454 basehttp 17424 4904 "GET /admin/book/schedule/ HTTP/1.1" 200 10861
+INFO 2021-11-02 21:22:16,522 basehttp 17424 4904 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,535 basehttp 17424 4904 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,546 basehttp 17424 8620 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,552 basehttp 17424 4904 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,561 basehttp 17424 8620 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,562 basehttp 17424 4904 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,570 basehttp 17424 6048 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,592 basehttp 17424 16676 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,599 basehttp 17424 11676 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:16,742 basehttp 17424 5436 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:16,801 basehttp 17424 5436 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:20,855 basehttp 17424 18896 "GET /admin/book/schedule/8/change/ HTTP/1.1" 200 12802
+INFO 2021-11-02 21:22:21,034 basehttp 17424 18896 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:33,979 basehttp 17424 7864 "GET /admin/book/car/ HTTP/1.1" 200 9488
+INFO 2021-11-02 21:22:34,377 basehttp 17424 7864 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:36,651 basehttp 17424 7864 "GET /admin/book/car/6915(2)/change/ HTTP/1.1" 200 12280
+INFO 2021-11-02 21:22:36,765 basehttp 17424 19300 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:36,958 basehttp 17424 7864 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:40,447 basehttp 17424 9800 "GET /admin/book/seat_chart/ HTTP/1.1" 200 8858
+INFO 2021-11-02 21:22:40,671 basehttp 17424 9800 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 21:22:42,416 basehttp 17424 9800 "GET /admin/book/seat_chart/14/change/ HTTP/1.1" 200 11137
+INFO 2021-11-02 21:22:42,681 basehttp 17424 9800 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+ERROR 2021-11-02 21:22:51,462 log 17424 6276 Internal Server Error: /marshrutka/search
+Traceback (most recent call last):
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'source'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\7sem\TRPO\Marshrutka\marshutka-master\book\views.py", line 26, in searchView
+    source = Station.objects.get(pk=request.POST['source'])
+  File "C:\Users\Алина Садовская\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'source'
+ERROR 2021-11-02 21:22:51,466 basehttp 17424 6276 "GET /marshrutka/search HTTP/1.1" 500 84129
+INFO 2021-11-02 21:22:55,150 basehttp 17424 6276 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 21:22:55,246 basehttp 17424 6276 "GET /static/web/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,250 basehttp 17424 17648 "GET /static/web/css/easy-responsive-tabs.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,261 basehttp 17424 6276 "GET /static/web/css/style.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,279 basehttp 17424 8136 "GET /static/web/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,286 basehttp 17424 8392 "GET /static/web/css/lightbox.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,299 basehttp 17424 9224 "GET /static/web/js/jquery-2.2.3.min.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,328 basehttp 17424 9224 "GET /static/web/js/lightbox-plus-jquery.min.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,331 basehttp 17424 9224 "GET /static/web/js/easy-responsive-tabs.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,402 basehttp 17424 8392 "GET /static/web/js/jarallax.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,403 basehttp 17424 8136 "GET /static/web/js/SmoothScroll.min.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,404 basehttp 17424 6276 "GET /static/web/js/move-top.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,404 basehttp 17424 9224 "GET /static/web/js/index.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,405 basehttp 17424 17648 "GET /static/web/js/easing.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,405 basehttp 17424 13960 "GET /static/web/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,455 basehttp 17424 13960 "GET /static/image/Karta.png HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,455 basehttp 17424 8392 "GET /static/image/k3.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,456 basehttp 17424 17648 "GET /static/image/fon2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,457 basehttp 17424 9224 "GET /static/image/068.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,457 basehttp 17424 6276 "GET /static/image/k1.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,458 basehttp 17424 8136 "GET /static/image/k2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,464 basehttp 17424 6276 "GET /static/image/k4.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,483 basehttp 17424 8136 "GET /static/image/k5.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,486 basehttp 17424 13960 "GET /static/web/images/g7.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,488 basehttp 17424 9224 "GET /static/image/k6.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,491 basehttp 17424 17648 "GET /static/image/k7.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,491 basehttp 17424 8392 "GET /static/web/images/g5.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,492 basehttp 17424 6276 "GET /static/image/k8.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,496 basehttp 17424 17648 "GET /static/web/images/t1.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,499 basehttp 17424 6276 "GET /static/web/images/t2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,500 basehttp 17424 8392 "GET /static/web/images/t3.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,516 basehttp 17424 8392 "GET /static/web/images/2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,516 basehttp 17424 17648 "GET /static/web/images/t4.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,581 basehttp 17424 13960 "GET /static/web/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,582 basehttp 17424 9224 "GET /static/web/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,582 basehttp 17424 8392 "GET /static/web/images/banner.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,583 basehttp 17424 6276 "GET /static/image/fon.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,584 basehttp 17424 17648 "GET /static/web/images/slide1.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,655 basehttp 17424 17648 "GET /static/web/images/img-sprite.png HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,656 basehttp 17424 6276 "GET /static/web/images/loading.gif HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,657 basehttp 17424 8392 "GET /static/web/images/close.png HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:55,907 basehttp 17424 8392 "GET /static/web/images/sub.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,010 basehttp 17424 2188 "GET /marshrutka/ HTTP/1.1" 200 4974
+INFO 2021-11-02 21:22:59,100 basehttp 17424 2188 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,103 basehttp 17424 19820 "GET /static/css/bootstrap-theme.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,119 basehttp 17424 2188 "GET /static/js/jquery-3.3.1.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,119 basehttp 17424 19820 "GET /static/js/dateFormat.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,129 basehttp 17424 2188 "GET /static/js/materialize.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,130 basehttp 17424 19820 "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,131 basehttp 17424 7816 "GET /static/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,168 basehttp 17424 17928 "GET /static/css/animate.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,170 basehttp 17424 12972 "GET /static/css/materialize.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,171 basehttp 17424 19976 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2021-11-02 21:22:59,215 basehttp 17424 19976 "GET /static/fon.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 21:23:22,647 basehttp 17424 14908 "POST /marshrutka/search HTTP/1.1" 200 5106
+INFO 2021-11-02 21:23:31,870 basehttp 17424 19904 "GET /marshrutka/book/14/1-4/2A/2020-05-30 HTTP/1.1" 200 4604
+INFO 2021-11-02 21:23:42,737 basehttp 17424 9596 "GET /marshrutka/ HTTP/1.1" 200 4974
+INFO 2021-11-02 21:23:44,173 basehttp 17424 9596 "GET /marshrutka/profile HTTP/1.1" 200 2300
+INFO 2021-11-02 21:24:01,919 basehttp 17424 15380 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 21:24:03,586 basehttp 17424 15380 "GET /static/web/images/move-up.png HTTP/1.1" 304 0
+INFO 2021-11-02 21:24:07,789 basehttp 17424 15380 "GET /marshrutka/ HTTP/1.1" 200 4974
+INFO 2021-11-02 21:24:55,788 basehttp 17424 4264 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 21:25:31,808 basehttp 17424 1280 "GET /marshrutka/ HTTP/1.1" 200 4974
+INFO 2021-11-02 21:26:51,105 basehttp 17424 4688 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 22:31:30,122 autoreload 19888 19476 Watching for file changes with StatReloader
+INFO 2021-11-02 22:41:16,249 autoreload 11424 3832 Watching for file changes with StatReloader
+INFO 2021-11-02 22:43:02,684 autoreload 16892 13516 Watching for file changes with StatReloader
+INFO 2021-11-02 22:43:13,931 basehttp 16892 6584 "GET / HTTP/1.1" 200 29542
+INFO 2021-11-02 22:43:14,110 basehttp 16892 11956 "GET /static/web/css/easy-responsive-tabs.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,110 basehttp 16892 6584 "GET /static/web/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,134 basehttp 16892 6584 "GET /static/web/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,134 basehttp 16892 11956 "GET /static/web/css/lightbox.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,148 basehttp 16892 20188 "GET /static/web/css/style.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,161 basehttp 16892 16268 "GET /static/web/js/jquery-2.2.3.min.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,195 basehttp 16892 16268 "GET /static/web/js/lightbox-plus-jquery.min.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,196 basehttp 16892 20188 "GET /static/web/js/easy-responsive-tabs.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,235 basehttp 16892 6584 "GET /static/web/js/move-top.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,235 basehttp 16892 11956 "GET /static/web/js/SmoothScroll.min.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,236 basehttp 16892 20188 "GET /static/web/js/index.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,237 basehttp 16892 16268 "GET /static/web/js/jarallax.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,263 basehttp 16892 20188 "GET /static/image/fon2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,264 basehttp 16892 11956 "GET /static/image/068.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,264 basehttp 16892 6584 "GET /static/image/k1.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,265 basehttp 16892 16268 "GET /static/image/Karta.png HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,272 basehttp 16892 11760 "GET /static/web/js/easing.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,280 basehttp 16892 11760 "GET /static/image/k2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,280 basehttp 16892 6584 "GET /static/image/k4.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,281 basehttp 16892 20188 "GET /static/image/k6.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,281 basehttp 16892 16268 "GET /static/image/k3.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,282 basehttp 16892 11956 "GET /static/image/k5.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,308 basehttp 16892 20188 "GET /static/web/images/g7.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,309 basehttp 16892 6584 "GET /static/image/k8.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,309 basehttp 16892 11956 "GET /static/image/k7.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,310 basehttp 16892 16268 "GET /static/web/images/g5.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,310 basehttp 16892 11760 "GET /static/web/images/t1.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,320 basehttp 16892 700 "GET /static/web/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,335 basehttp 16892 16268 "GET /static/web/images/t4.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,335 basehttp 16892 700 "GET /static/web/images/t2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,335 basehttp 16892 6584 "GET /static/web/images/2.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,336 basehttp 16892 11760 "GET /static/web/images/t3.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,336 basehttp 16892 20188 "GET /static/image/fon.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,337 basehttp 16892 11956 "GET /static/web/images/banner.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,346 basehttp 16892 11956 "GET /static/web/images/slide1.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,530 basehttp 16892 11956 "GET /static/web/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,531 basehttp 16892 20188 "GET /static/web/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,582 basehttp 16892 11956 "GET /static/web/images/loading.gif HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,582 basehttp 16892 20188 "GET /static/web/images/img-sprite.png HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,583 basehttp 16892 6584 "GET /static/web/images/close.png HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:14,744 basehttp 16892 6584 "GET /static/web/images/sub.jpg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,089 basehttp 16892 11260 "GET /admin/ HTTP/1.1" 200 10521
+INFO 2021-11-02 22:43:20,155 basehttp 16892 17072 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,156 basehttp 16892 11260 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,169 basehttp 16892 13044 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,170 basehttp 16892 11260 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,171 basehttp 16892 15408 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,172 basehttp 16892 15932 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,187 basehttp 16892 15408 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,190 basehttp 16892 11260 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,192 basehttp 16892 15932 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,296 basehttp 16892 15932 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,298 basehttp 16892 11260 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:20,302 basehttp 16892 15408 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,658 basehttp 16892 15408 "GET /admin/book/car/ HTTP/1.1" 200 9488
+INFO 2021-11-02 22:43:24,723 basehttp 16892 15408 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,724 basehttp 16892 15932 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,725 basehttp 16892 13044 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,726 basehttp 16892 17072 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,731 basehttp 16892 8544 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,743 basehttp 16892 15408 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,744 basehttp 16892 15932 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,745 basehttp 16892 17072 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,745 basehttp 16892 13044 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:24,842 basehttp 16892 11260 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:43:24,901 basehttp 16892 11260 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:27,014 basehttp 16892 14372 "GET /admin/book/car/6915(a)/change/ HTTP/1.1" 200 12276
+INFO 2021-11-02 22:43:27,060 basehttp 16892 14372 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:27,078 basehttp 16892 14372 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:27,079 basehttp 16892 5064 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:27,089 basehttp 16892 5064 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2021-11-02 22:43:27,160 basehttp 16892 11616 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:43:38,419 basehttp 16892 13464 "GET /admin/book/car/ HTTP/1.1" 200 9488
+INFO 2021-11-02 22:43:38,585 basehttp 16892 13464 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:43:41,644 basehttp 16892 13464 "GET /admin/book/car/add/ HTTP/1.1" 200 11894
+INFO 2021-11-02 22:43:41,763 basehttp 16892 13464 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:43:54,194 basehttp 16892 5336 "POST /admin/book/car/add/ HTTP/1.1" 200 12063
+INFO 2021-11-02 22:43:54,286 basehttp 16892 5336 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:44:04,002 basehttp 16892 5336 "POST /admin/book/car/add/ HTTP/1.1" 302 0
+INFO 2021-11-02 22:44:04,155 basehttp 16892 5336 "GET /admin/book/car/ HTTP/1.1" 200 9884
+INFO 2021-11-02 22:44:04,283 basehttp 16892 5336 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:44:04,310 basehttp 16892 5336 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2021-11-02 22:44:08,361 basehttp 16892 5336 "GET /admin/book/car/1111/change/ HTTP/1.1" 200 12151
+INFO 2021-11-02 22:44:08,528 basehttp 16892 5336 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2021-11-02 22:44:10,665 basehttp 16892 5336 "GET /admin/book/car/1111/delete/ HTTP/1.1" 200 7554
+INFO 2021-11-02 22:44:11,167 basehttp 16892 5336 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2021-11-02 22:44:12,714 basehttp 16892 5336 "POST /admin/book/car/1111/delete/ HTTP/1.1" 302 0
+INFO 2021-11-02 22:44:12,936 basehttp 16892 5336 "GET /admin/book/car/ HTTP/1.1" 200 9638
+INFO 2021-11-02 22:44:13,046 basehttp 16892 5336 "GET /admin/jsi18n/ HTTP/1.1" 200 3195

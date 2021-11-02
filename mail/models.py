@@ -6,6 +6,7 @@ from multiprocessing.pool import ThreadPool
 
 
 class Mail(models.Model):
+    id = models.AutoField(primary_key=True)
     topic = models.CharField(max_length=120)
     text = models.TextField()
     date = models.DateField("date")
