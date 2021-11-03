@@ -455,6 +455,14 @@
 			</div>
 			<div class="col-md-6 col-sm-6 box agileits-feedback-grids">
 					<div>
+                        {% for comment in comments %}
+                        <div class="testimonal grid-1">
+							<p><i class="fa fa-quote-right" aria-hidden="true"></i>{{ comment.comment }}</p>
+							<h3 class="agile-testi-right">{{ comment.user }}</h3>
+						</div>
+                        {% empty %}
+                            <p>There are no comments yet.</p>
+                        {% endfor %}
 						<div class="testimonal grid-1">
 							<p><i class="fa fa-quote-right" aria-hidden="true"></i>Замечательный сервис и прекрасный водитель. Очень отзывчивый персонал! </p>
 							<h3 class="agile-testi-right"> Екатерина</h3>
@@ -481,6 +489,14 @@
 						</div>
 					</div>
 			</div>
+            {% if user.is_authenticated %}
+                 <h2>Добавить новый комментарий</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="text" name="Text" placeholder="Текст" required="">
+                    <p><input type="submit"  name="new_comment" value="Добавить"></p>
+                </form>
+            {% endif %}
 			</div>
 		</div>
 
