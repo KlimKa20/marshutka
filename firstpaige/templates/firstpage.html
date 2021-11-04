@@ -63,7 +63,7 @@
 				<h3>Booking online</h3>
 				<form>
                     <img src ="/static/image/Karta.png" class="img-responsive" alt="" />
-                    <a href="marshrutka/" class="button24">Зарезервировать место</a>
+                    <a href="marshrutka/" class="button24 img-responsive">Зарезервировать место</a>
 				</form>
 			</div>
 		</div>
@@ -450,8 +450,19 @@
 	<div class="jarallax w3ls-section testimonials" id="testimonials">
 		<div class="container">
 			<h3 class="agileits-title">Отзывы</h3>
-			<div class="col-md-6 col-sm-6  w3ls-testi-left">
-				<img src="/static/web/images/2.jpg" class="img-responsive" alt="" />
+			<div class="col-md-6 col-sm-6  w3ls-testi-left" >
+                <div style="position: relative;">
+                     <img src="/static/web/images/2.jpg" alt="" style="width: 100%" />
+                     {% if user.is_authenticated %}
+                        <div class="contact-form" style="position: absolute;left:15%;top: 25%;background: white;width: 70%">
+                            <form method="post" style="width: 90%;margin: 15px">
+                                {% csrf_token %}
+                                <textarea name="Text" required="" placeholder="Добавить новый комментарий"></textarea>
+                                <p><input type="submit"  name="new_comment" value="Добавить"></p>
+                            </form>
+                        </div>
+                    {% endif %}
+                </div>
 			</div>
 			<div class="col-md-6 col-sm-6 box agileits-feedback-grids">
 					<div>
@@ -489,14 +500,6 @@
 						</div>
 					</div>
 			</div>
-            {% if user.is_authenticated %}
-                 <h2>Добавить новый комментарий</h2>
-                <form method="post">
-                    {% csrf_token %}
-                    <input type="text" name="Text" placeholder="Текст" required="">
-                    <p><input type="submit"  name="new_comment" value="Добавить"></p>
-                </form>
-            {% endif %}
 			</div>
 		</div>
 
