@@ -121,15 +121,17 @@ USE_TZ = False
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'novolukoml_minsk@mail.ru'
-EMAIL_USE_SSL = True
+# EMAIL_PORT = 465
+# EMAIL_USE_SSL = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_PASSWORD = '1a2b3c4dBsuir'
 ACCOUNT_EMAIL_UNIQUE = True
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = True
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "novolukomlminsk@gmail.com"
+EMAIL_HOST_PASSWORD = "1a2b3c4dAlina"
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+EMAIL_USE_TLS = True
+
 
 LOGGING = {
     'version': 1,

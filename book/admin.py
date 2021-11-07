@@ -5,5 +5,6 @@ from .models import *
 admin.site.register(Station)
 admin.site.register(Car)
 admin.site.register(Schedule)
-admin.site.register(Seat_Chart)
+admin.site.register(SeatChart)
+admin.site.register(TypeSeat)
 admin.site.register(Ticket)

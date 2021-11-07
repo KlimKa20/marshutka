@@ -31,7 +31,7 @@
                         <input class="w3-input w3-border sourceInput" list="sources" name="source" required>
                           <datalist id="sources">
                               {% for s in stations %}
-                              <option value="{{ s.pk }}">{{ s }}</option>
+                              <option value="{{ s.name }}">{{ s.code }}</option>
                               {% endfor %}
                           </datalist>
                     </div>
@@ -40,7 +40,7 @@
                         <input class="w3-input w3-border" list="destinations" name="dest" required>
                           <datalist id="destinations">
                             {% for s in stations %}
-                                <option value="{{ s.pk }}">{{ s }}</option>
+                                <option value="{{ s.name }}">{{ s.code }}</option>
                             {% endfor %}
                           </datalist>
                     </div>

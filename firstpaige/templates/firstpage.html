@@ -63,7 +63,7 @@
 				<h3>Booking online</h3>
 				<form>
                     <img src ="/static/image/Karta.png" class="img-responsive" alt="" />
-                    <a href="marshrutka/" class="button24">Зарезервировать место</a>
+                    <a href="marshrutka/" class="button24 img-responsive">Зарезервировать место</a>
 				</form>
 			</div>
 		</div>
@@ -450,11 +450,30 @@
 	<div class="jarallax w3ls-section testimonials" id="testimonials">
 		<div class="container">
 			<h3 class="agileits-title">Отзывы</h3>
-			<div class="col-md-6 col-sm-6  w3ls-testi-left">
-				<img src="/static/web/images/2.jpg" class="img-responsive" alt="" />
+			<div class="col-md-6 col-sm-6  w3ls-testi-left" >
+                <div style="position: relative;">
+                     <img src="/static/web/images/2.jpg" alt="" style="width: 100%" />
+                     {% if user.is_authenticated %}
+                        <div class="contact-form" style="position: absolute;left:15%;top: 25%;background: white;width: 70%">
+                            <form method="post" style="width: 90%;margin: 15px">
+                                {% csrf_token %}
+                                <textarea name="Text" required="" placeholder="Добавить новый комментарий"></textarea>
+                                <p><input type="submit"  name="new_comment" value="Добавить"></p>
+                            </form>
+                        </div>
+                    {% endif %}
+                </div>
 			</div>
 			<div class="col-md-6 col-sm-6 box agileits-feedback-grids">
 					<div>
+                        {% for comment in comments %}
+                        <div class="testimonal grid-1">
+							<p><i class="fa fa-quote-right" aria-hidden="true"></i>{{ comment.comment }}</p>
+							<h3 class="agile-testi-right">{{ comment.user }}</h3>
+						</div>
+{#                        {% empty %}#}
+{#                            <p>There are no comments yet.</p>#}
+                        {% endfor %}
 						<div class="testimonal grid-1">
 							<p><i class="fa fa-quote-right" aria-hidden="true"></i>Замечательный сервис и прекрасный водитель. Очень отзывчивый персонал! </p>
 							<h3 class="agile-testi-right"> Екатерина</h3>
@@ -524,7 +543,7 @@
 	</div>
 	<!-- //contact -->
 	<div class="w3_agile-copyright text-center">
-		<p>© 2021 custom. All rights reserved | Design by Alina Sadovskaya</p>
+		<p>© 2020 custom. All rights reserved | Design by Alina Sadovskaya</p>
 	</div>
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >

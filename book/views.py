@@ -23,37 +23,46 @@ def homeView(request):
 
 @login_required(login_url="/marshrutka/login")
 def searchView(request):
-    source = Station.objects.get(pk=request.POST['source'])
-    dest = Station.objects.get(pk=request.POST['dest'])
+    source = Station.objects.get(name=request.POST['source'])
+    dest = Station.objects.get(name=request.POST['dest'])
     date = request.POST['journey_date']
     sourceCars = []
     for s in source.station_schedule.all():
         sourceCars.append(s.car)
+    print(sourceCars)
     destCars = []
     for s in dest.station_schedule.all():
         destCars.append(s.car)
+    print(destCars)
     allCars = list(set(sourceCars) & set(destCars))
+    print(allCars)
     cars = []
     sourceSchedules = []
     destSchedules = []
     scheduleCharts = []
     fares = []
     for t in allCars:
-        departing_station = t.car_schedule.get(station=source)
-        arriving_station = t.car_schedule.get(station=dest)
-        if departing_station.pk < arriving_station.pk:
-            try:
-                seat = Seat_Chart.objects.get(date=parser.parse(date), car=t)
-                scheduleCharts.append(seat)
-                cars.append(t)
-                sourceSchedules.append(departing_station)
-                destSchedules.append(arriving_station)
-                fare = {}
-                fare["1A"] = (arriving_station.pk - departing_station.pk)*20
-                fare["2A"] = (arriving_station.pk - departing_station.pk)*15
-                fares.append(fare)
-            except Exception:
-                continue
+        departing_station = t.car_schedule.filter(station=source)
+        arriving_station = t.car_schedule.filter(station=dest)
+        for i in range(len(departing_station)):
+            print(departing_station[i])
+            print(arriving_station[i])
+            print('-----')
+            if departing_station[i].pk < arriving_station[i].pk:
+                try:
+                    seat = SeatChart.objects.get(date=parser.parse(date), car=t)
+                    scheduleCharts.append(seat)
+                    cars.append(t)
+                    sourceSchedules.append(departing_station[i])
+                    print(sourceSchedules)
+                    destSchedules.append(arriving_station[i])
+                    print(destSchedules)
+                    fare = {}
+                    fare["1A"] = (arriving_station[i].pk - departing_station[i].pk)*20
+                    fare["2A"] = (arriving_station[i].pk - departing_station[i].pk)*15
+                    fares.append(fare)
+                except Exception:
+                    continue
 
     schedules = zip(cars, sourceSchedules, destSchedules, scheduleCharts, fares)
     temp=False
@@ -80,27 +89,32 @@ def complexSearchView(request, source, dest, date):
     for s in dest.station_schedule.all():
         destCars.append(s.car)
     allCars = list(set(sourceCars) & set(destCars))
+    print(allCars)
     cars = []
     sourceSchedules = []
     destSchedules = []
     scheduleCharts = []
     fares = []
     for t in allCars:
-        departing_station = t.car_schedule.get(station=source)
-        arriving_station = t.car_schedule.get(station=dest)
-        if departing_station.pk < arriving_station.pk:
-            try:
-                seat = Seat_Chart.objects.get(date=parser.parse(date), car=t)
-                scheduleCharts.append(seat)
-                cars.append(t)
-                sourceSchedules.append(departing_station)
-                destSchedules.append(arriving_station)
-                fare = {}
-                fare["1A"] = (arriving_station.pk - departing_station.pk) * 20
-                fare["2A"] = (arriving_station.pk - departing_station.pk) * 15
-                fares.append(fare)
-            except Exception:
-                continue
+        departing_station = t.car_schedule.filter(station=source)
+        arriving_station = t.car_schedule.filter(station=dest)
+        for i in range(len(departing_station)):
+            if departing_station[i].pk < arriving_station[i].pk:
+                try:
+                    seat = SeatChart.objects.get(date=parser.parse(date), car=t)
+                    scheduleCharts.append(seat)
+                    print(scheduleCharts)
+                    cars.append(t)
+                    sourceSchedules.append(departing_station[i])
+                    print(sourceSchedules)
+                    destSchedules.append(arriving_station[i])
+                    print(destSchedules)
+                    fare = {}
+                    fare["1A"] = (arriving_station[i].pk - departing_station[i].pk) * 20
+                    fare["2A"] = (arriving_station[i].pk - departing_station[i].pk) * 15
+                    fares.append(fare)
+                except Exception:
+                    continue
 
     schedules = zip(cars, sourceSchedules, destSchedules, scheduleCharts, fares)
     temp = False
@@ -112,14 +126,15 @@ def complexSearchView(request, source, dest, date):
 
 @login_required(login_url="/marshrutka/login")
 def bookView(request, chart, sourceSchedule, destSchedule, type, date):
-    chart = Seat_Chart.objects.get(pk=chart)
+    chart = SeatChart.objects.get(pk=chart)
+    type = TypeSeat.objects.get(type=type)
     car = chart.car
     sourceSchedule = Schedule.objects.get(pk=sourceSchedule)
     destSchedule = Schedule.objects.get(pk=destSchedule)
     source = sourceSchedule.station
     dest = destSchedule.station
     value = 0
-    if type =="1A":
+    if type == "1A":
         value = chart.get1A()
     else:
         value = chart.get2A()
@@ -128,8 +143,9 @@ def bookView(request, chart, sourceSchedule, destSchedule, type, date):
 
 
 @login_required(login_url="/marshrutka/login")
-def confirmTicketView(request, chart, sourceSchedule, destSchedule, type, date):
-    chart = Seat_Chart.objects.get(pk=chart)
+def confirmTicketView(request, chart, sourceSchedule, destSchedule, type):
+    chart = SeatChart.objects.get(pk=chart)
+    type = TypeSeat.objects.get(type=type)
     car = chart.car
     sourceSchedule = Schedule.objects.get(pk=sourceSchedule)
     destSchedule = Schedule.objects.get(pk=destSchedule)
@@ -145,15 +161,11 @@ def confirmTicketView(request, chart, sourceSchedule, destSchedule, type, date):
         b.type = type
         b.chart = chart
         b.user = user
-        b.source = source
-        b.dest = dest
-        b.source_schedule = sourceSchedule
-        b.dest_schedule = destSchedule
-        b.date = date
+        b.source = sourceSchedule
+        b.dest = destSchedule
         b.calculateFare()
         b.save()
         logger.info("{name} Add ticket".format(name=name))
-
 
     data = {
         "car": car,

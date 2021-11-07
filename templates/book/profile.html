@@ -6,7 +6,7 @@
 
 {% block body %}
 <div class="w3-display-middle" style="width:80%">
-    <div class="w3-container w3-white w3-padding-16"  style="margin-top:50px; height: 600px; overflow-y: scroll;">
+    <div class="w3-container w3-white w3-padding-16"  style="margin-top:100px; height: 600px; overflow-y: scroll;">
     <h3 style="text-align: center">История поездок</h3>
     <ul>
         {% for ticket in booked %}
@@ -22,15 +22,15 @@
                     </tr>
                     <tr>
                         <th>Откуда</th>
-                        <td>{{ ticket.source }} в {{ ticket.source_schedule.departure }}</td>
+                        <td>{{ ticket.source.getStationName }} в {{ ticket.source.departure }}</td>
                     </tr>
                     <tr>
                         <th>Куда</th>
-                        <td>{{ ticket.dest }} в {{ ticket.dest_schedule.arrival }}</td>
+                        <td>{{ ticket.dest.getStationName }} в {{ ticket.dest.arrival }}</td>
                     </tr>
                     <tr>
                         <th>Дата</th>
-                        <td>{{ ticket.date }}</td>
+                        <td>{{ ticket.source.day }}</td>
                     </tr>
                     <tr>
                         <th>Цена</th>
