@@ -22,7 +22,6 @@ class LoginView(bracesviews.AnonymousRequiredMixin, authviews.LoginView):
     template_name = "accounts/login.html"
     form_class = forms.LoginForm
 
-
     def form_valid(self, form):
         r = super(LoginView, self).form_valid(form)
         remember_me = form.cleaned_data.get('remember_me')
@@ -57,7 +56,6 @@ def SignUpView(request):
         return render(request, 'accounts/signup.html')
     if request.method == 'POST':
         form = forms.SignUpForm(request.POST or None)
-       # print(form.errors.as_data())
         if form.is_valid():
             userValue = form.cleaned_data.get("username")
             email = form.cleaned_data.get("email")
@@ -94,8 +92,6 @@ def SignUpView(request):
             if 'username' in form.errors.as_data():
                 context["error_name"] = "Данное имя уже зарегестрировано"
             return render(request, 'accounts/signup.html', context)
-
-
 
 
 class PasswordChangeView(authviews.PasswordChangeView):

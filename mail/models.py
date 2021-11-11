@@ -6,10 +6,10 @@ from multiprocessing.pool import ThreadPool
 
 
 class Mail(models.Model):
+    id = models.AutoField(primary_key=True)
     topic = models.CharField(max_length=120)
     text = models.TextField()
-    date = models.DateField("date")
-    time = models.TimeField()
+    datetime = models.DateTimeField(auto_now=True)
     users = models.ManyToManyField(Profile, limit_choices_to={'Verified': True}, blank=False)
     check_send = models.BooleanField(default=False)
 

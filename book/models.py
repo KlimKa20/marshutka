@@ -7,17 +7,22 @@ User = get_user_model()
 # Create your models here.
 
 class Station(models.Model):
-    code = models.CharField("Code", max_length=10, primary_key=True)
+    id = models.AutoField(primary_key=True)
+    code = models.CharField("Code", max_length=15)
     name = models.CharField("Name", max_length=30)
     address = models.CharField("Address", max_length=50, null=True)
+
+    class Meta:
+        ordering = ('name',)
 
     def __str__(self):
         return self.name
 
 
 class Car(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField("Name", max_length=30)
-    number = models.CharField("Number", max_length=15, primary_key=True)
+    number = models.CharField("Number", max_length=15)
     source = models.ForeignKey(Station, on_delete=models.SET(None), related_name="car_source")
     dest = models.ForeignKey(Station, on_delete=models.SET(None), related_name="car_dest")
 
@@ -26,53 +31,67 @@ class Car(models.Model):
 
 
 class Schedule(models.Model):
-    arrival = models.CharField("Arrival", max_length=8, null=True)
-    day = models.IntegerField("Day", null=True)
+    id = models.AutoField(primary_key=True)
+    day = models.DateField("Day", null=True)
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name="car_schedule")
     station = models.ForeignKey(Station, on_delete=models.CASCADE, related_name="station_schedule")
-    id = models.IntegerField("id", primary_key=True)
-    departure = models.CharField("Departure", max_length=8, null=True)
+    departure = models.TimeField("Departure", null=True)
+    arrival = models.TimeField("Arrival", null=True)
 
     def __str__(self):
         return str(self.car) + " at " + str(self.station)
 
+    def getStationName(self):
+        return self.station.name
 
-class Seat_Chart(models.Model):
+
+class SeatChart(models.Model):
+    id = models.AutoField(primary_key=True)
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name="car_chart")
     first_ac = models.IntegerField("1st AC")
     second_ac = models.IntegerField("2nd AC")
     date = models.DateField("Date")
 
     def get1A(self):
-        return self.first_ac - self.chart_tickets.all().filter(type="1A").count()
+        type = TypeSeat.objects.get(type='1A')
+        return self.first_ac - self.chart_tickets.all().filter(type=type).count()
 
     def get2A(self):
-        return self.second_ac - self.chart_tickets.all().filter(type="2A").count()
+        type = TypeSeat.objects.get(type='2A')
+        return self.second_ac - self.chart_tickets.all().filter(type=type).count()
 
     def __str__(self):
         return str(self.car) + " on " + str(self.date)
 
 
+class TypeSeat(models.Model):
+    id = models.AutoField(primary_key=True)
+    type = models.CharField("Type", max_length=2)
+
+    def __str__(self):
+        return str(self.type)
+
+
 class Ticket(models.Model):
-    passenger = models.CharField("Name",max_length=20)
+    id = models.AutoField(primary_key=True)
+    passenger = models.CharField("Name", max_length=20)
     car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name="car_tickets")
-    type = models.CharField("Type",max_length=2)
-    chart = models.ForeignKey(Seat_Chart, on_delete=models.CASCADE, related_name="chart_tickets")
+    type = models.ForeignKey(TypeSeat, on_delete=models.CASCADE, related_name="type_chart")
+    chart = models.ForeignKey(SeatChart, on_delete=models.CASCADE, related_name="chart_tickets")
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="tickets")
-    source = models.ForeignKey(Station, on_delete=models.CASCADE, related_name="source_tickets")
-    dest = models.ForeignKey(Station, on_delete=models.CASCADE, related_name="dest_tickets")
-    source_schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE, related_name="source_schedule_tickets")
-    dest_schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE, related_name="dest_schedule_tickets")
-    date = models.DateField("Date")
+    source = models.ForeignKey(Schedule, on_delete=models.CASCADE, related_name="source_schedule_tickets")
+    dest = models.ForeignKey(Schedule, on_delete=models.CASCADE, related_name="dest_schedule_tickets")
+    datetime = models.DateTimeField(auto_now=True)
     fare = models.IntegerField("Fare")
 
     def __str__(self):
         return str(self.passenger) + " on " + str(self.date)+" in "+str(self.car)
 
     def calculateFare(self):
-        factor=1
-        if(self.type == "1A"):
+        factor = 1
+        type = self.type.type
+        if type == "1A":
             factor = 20
-        elif(self.type == "2A"):
+        elif type == "2A":
             factor = 15
-        self.fare = (self.dest_schedule.pk - self.source_schedule.pk)*factor
+        self.fare = (self.dest.pk - self.source.pk)*factor

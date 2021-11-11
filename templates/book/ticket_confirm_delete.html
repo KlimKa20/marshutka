@@ -24,15 +24,15 @@
                     </tr>
                     <tr>
                         <th>Откуда</th>
-                        <td>{{ ticket.source }} в {{ ticket.source_schedule.departure }}</td>
+                        <td>{{ ticket.source.getStationName }} в {{ ticket.source.departure }}</td>
                     </tr>
                     <tr>
                         <th>Куда</th>
-                        <td>{{ ticket.dest }} в {{ ticket.dest_schedule.arrival }}</td>
+                        <td>{{ ticket.dest.getStationName }} в {{ ticket.dest.arrival }}</td>
                     </tr>
                     <tr>
                         <th>Дата</th>
-                        <td>{{ ticket.date }}</td>
+                        <td>{{ ticket.source.day }}</td>
                     </tr>
                 </table>
         <form action="" method="post">
