@@ -85,7 +85,7 @@ class Ticket(models.Model):
     fare = models.IntegerField("Fare")
 
     def __str__(self):
-        return str(self.passenger) + " on " + str(self.date)+" in "+str(self.car)
+        return str(self.passenger) + " on " + str(self.datetime)+" in "+str(self.car)
 
     def calculateFare(self):
         factor = 1
